@@ -1,0 +1,309 @@
+body{
+    background-color: #f3f3f3;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Raleway', sans-serif;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    color:#e6e6e6;
+}
+a h3{
+    padding: 5px;
+    border-bottom: solid 1px #b3b3b3;
+}
+a{
+    color:#e70303;
+}
+
+a:visited {
+    color:#e70303 ;
+}
+
+a:hover{
+    color:#e66c6c;
+    text-decoration: none;
+
+}
+a:active {
+    text-decoration: none;
+}
+
+.dark-p{
+    color:#262626;
+}
+h2{
+    border-bottom: solid 1px;
+}
+/* nav */
+
+.topnav {
+    overflow: hidden;
+}
+
+#topnavBox a{
+    color:#454545;
+    margin-right: 5px;
+    border: solid 1px #6e6e6e;
+}
+#nav-container{
+    text-align: center;
+}
+#topnavBox{
+    display: inline-block;
+    margin-top:5px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #7e7e7e;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 2px
+}
+
+/* Change the color of links on hover */
+#topnavBox a:hover {
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    border:solid 2px black !important;
+    color: #171717 !important;
+
+}
+
+
+.topnav .icon {
+    display: none;
+} 
+
+/* end of nav */
+.main-h1{
+    padding-bottom: 10px;
+    background-color: #292929;
+    color: #e6e6e0;
+    padding: 4px;
+}
+#first-section{
+    background-color: #292929;
+    color:white;
+    overflow: hidden;
+}
+
+#img-me{
+/*   
+    border-radius: 200px;*/
+    width: 15em;
+    border:solid 1px #adadad;
+    margin: 10%;
+    margin-left:30%; 
+    border-radius: 2px
+
+}
+
+#intro-text{
+    width: 85%;
+/*    border:solid 1px;*/
+    margin-left:20%;
+    margin-top:3%;
+    font-size:18px;
+    padding: 20px;
+    border:solid 1px #2f2f2f;
+    background: #272727; 
+}
+
+
+.side-menu{
+    float: right;
+    font-weight: bold;
+    font-size:1.1em;
+    color:white;
+    border: solid 1px silver;
+    margin:1%;
+    cursor:pointer;
+    clear: right;
+    height: 40px;
+    width:40px;  
+    text-align: center;
+}  
+
+.side-menu:hover{
+    border: solid 1px #ec9999;
+
+}
+.side-menu-img{
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+}
+
+
+#linkedin-logo{
+    background-image: url("../images/In-White-34px-R.png");
+}
+
+#git-logo{
+    background-image: url("../images/GitHub-Mark-Light-32px.png");
+}
+
+
+#second-section{
+    background-color:#efefef;
+    padding:25px;
+    border:solid 1px;
+
+}
+
+#second-section h3{
+    border-bottom: solid 2px #ec9999;
+    display:inline-block;
+    margin-bottom: 15px;
+}
+
+#second-section ul{
+    border-left:solid 1px;
+    list-style:none;
+    padding: 10px;
+    line-height: 20px;
+}
+
+#second-section li{
+    font-weight: bold;
+}
+
+#fourth-section p{
+    color:black;
+}
+
+
+/* Portfolio*/
+.showcase{
+    margin: 20px;
+}
+.showcase img{
+    width: 70%;
+}
+
+ /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (max-width: 1200px) { 
+    #intro-text{
+        width: 70%;
+        margin-left:35%;
+
+    }
+}
+
+
+@media (max-width: 1200px) { 
+     .main-h1{
+        font-size:27px;
+        
+    }
+}
+
+
+@media (max-width: 1000px) { 
+    #intro-text{
+        width: 70%;
+        margin-left:35%;
+
+    }
+    
+     .main-h1{
+        font-size:20px;
+        
+    }
+    
+      p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 750px) { 
+    #img-me{
+        margin: 2%;
+        margin-right: 0%;
+        width: 9em;
+        float: left;
+    }
+    
+    #intro-text{
+        font-size:0.8em;
+        margin:1%;
+        margin-top: 4%;
+        margin-right: 1.5%;
+        float:right;
+    }
+    
+    .side-menu{
+        float: left;
+        height: 20px;
+        width: 20px;
+        font-size: 9px;
+        margin: 1px;
+    }
+    
+    .side-menu-img{
+    background-size: 9px;
+    }
+    
+      .main-h1{
+        font-size:18px;
+        
+    }
+    
+        p{
+        font-size: 12px;
+    }
+    
+  
+}
+
+@media (max-width: 600px) { 
+      .main-h1{
+        font-size:15px;
+    }
+    
+    #topnavBox{
+        width: 150px;
+    } 
+    
+    h3{
+        font-size:15px;
+    }
+    
+    li{
+        font-size:10px;
+        line-height: 12px;
+    }
+}
+

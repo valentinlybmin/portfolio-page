@@ -1,5 +1,11 @@
 $( "#portfolio-section" ).hide();
+$( "#firstRow" ).hide();
+$( "#secondRow" ).hide();
+$( "#thirdRow" ).hide();
+
+$( "#portfolio-section" ).hide();
 $( "#contact-section" ).hide();
+$( ".main-h1" ).hide();
 var lastEvent = "#about-section";
 
 function responsiveNav() {
@@ -12,9 +18,20 @@ function responsiveNav() {
 } 
 
 $( document ).ready(function() {
+    
+    $( ".main-h1" ).slideToggle( "slow", function() {
+    // Animation complete.
+    });
+    
+    $( "#firstRow" ).fadeIn( 1000, function() {
+        $( "#secondRow" ).fadeIn( 800, function() {
+            $( "#thirdRow" ).fadeIn( 800, function() {
+            }); 
+        });
+    });
+    
     var activeBtn="about";
     var respWidth =$(window).width(); 
-    alert(respWidth);
     if(respWidth>=600){
         $(".topnav a").mouseenter(function (Event) {
             if(this.id !== activeBtn )  {
